@@ -1,0 +1,133 @@
+/* h1{
+    font-size: 30px;
+    color: red !important;
+}
+types of selectors are :elemnet selector , id selector, class selectorand group selector  
+p{
+     color: red ; /*element selector 
+}
+#article1{
+    background-color: yellow; /*id selector 
+}
+.paraclass{
+    background-color: aqua;
+   color: black;
+}
+p,article{
+     width:500px;  
+} 
+/* group selctor 
+
+p.paraclass{
+    background-color: aquamarine;
+    text-align: center;
+} */
+ /* p.para2{
+    font-style: italic;
+    font:200px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 30px;
+   font-weight: 500;
+   background-color: rgba(151, 13, 193, 0.19);
+
+ }
+ .para1{
+    background-color: hsl(74, 94%, 42%);
+    font-style: italic;
+    font-weight: 200;
+    line-height: 30px;
+ }
+ .para3{
+    background-color: #a02c2c6a;
+ }
+ #header1{
+    /* background-color: bisque;
+    border-style: solid;
+    border-width: 5px;
+    border-color: brown; 
+    background-color: bisque;
+    border:solid,brown,5px;
+    /* border-radius: 50px; 
+    width: 200px;
+    
+ } */
+  /* .box{
+   /* box-sizing:border-box ; */
+   /* width:200px;
+   height: 200px;
+   padding: 30px;
+   margin: 30px;
+   border: 20px;
+   border-width: 2px;
+   border-style: solid;
+   display: inline;
+  }
+  
+  span{
+   width:200px;
+   height: 200px;
+   padding:2px;
+   margin: 100px;
+   border: 20px;
+   border-style: solid;
+   border-width: 2px;
+   display: inline-block;
+  } */
+/* .container{
+   
+   position: relative;
+   height: 5000px;
+   background-color: bisque;
+}  */
+
+
+/* .image1{
+   position:relative;
+   top: 100px;
+}
+.image2{
+    position: absolute; 
+    top: 100px;
+    overlapping no space left}
+    */
+
+/* .image3{
+   /* position: fixed; 
+   position: sticky;
+   right: 200px;
+   
+} */
+ .class1 >p {
+   background-color: yellow;
+
+ }
+ div p{
+   background-color: aqua;
+ }
+.class1 + p{
+   background-color: antiquewhite;
+}
+.class1 ~ p{
+   background-color: brown;
+}
+/* unvisted link
+a:link{
+   color: red;
+}
+/* viste=ited link 
+a:visited{
+   color: blue;
+}
+/* mouse over a link 
+a:hover{
+color: pink;
+}
+/* selected link 
+a:active{
+   color:yellow
+} */
+a:hover{
+   color:green;
+   font-size: 22px;
+}
