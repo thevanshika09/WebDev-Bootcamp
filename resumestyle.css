@@ -1,0 +1,26 @@
+header{
+    background-color:antiquewhite;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+}
+.header1{
+    font-size:larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+table{
+    font-size: 20px;
+   padding: 2px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: beige;
+    margin: 20px;
+
+}
+footer{
+    text-align: center;
+    background-color: beige;
+    align-self: baseline;
+    font-size: x-large;
+}
+
