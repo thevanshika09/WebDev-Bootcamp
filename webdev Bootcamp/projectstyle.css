@@ -1,0 +1,97 @@
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: borderbox;
+    font-family: gilory;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+} 
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #D5FF3F;
+
+}
+nav{
+    /* background-color: white; */
+    padding: 30px 20px;
+    
+    display: flex;
+    align-items:center;
+    justify-content:  space-between;
+}
+nav .part2{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap: 100px;
+
+}
+nav h2{
+    font-size: 38px;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav a{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+section {
+    /* background-color: red; */
+    padding:30px 100px;
+
+}
+
+section .herotext1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.herotext1 h1{
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 300px;
+
+    
+}
+.herotext1 .video{
+    height: 100px;
+    width: 350px;
+    /* background-color: black; */
+    border-radius: 50px;
+    margin-top: 100px;
+    position: absolute;
+    right: 200px;
+    background-image: url(https://images.unsplash.com/photo-1737265396678-a7dac6fcdff2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D );
+    background-position: 1000px;
+    
+
+    
+  
+}
+.herotext2 h1{
+   
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 10px;
+}
+
+ section .herotext2 {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.herotext2 p{
+    font-size: 15px;
+    width: 300px;
+   font-family: Arial, Helvetica, sans-serif;
+   position: absolute;
+   display: flex;
+   left:650px; 
+}
+
