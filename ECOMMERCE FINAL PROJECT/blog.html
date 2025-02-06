@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - INVCHAIN PHARMA</title>
+  <link rel="stylesheet" href="style2.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-pE9n5thOsFjIUGJ2ZpOZ+5U29x5O+7LlDQroPRJ0HIsrd8nO0O6lpvyW1bfvONd9WzE6pDYb7IslHUCM2P2A3w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">INVCHAIN PHARMA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+     
+    </nav>
+  </header>
+
+  <!-- BLOG HERO SECTION -->
+  <section class="blog-hero">
+    <h1>Welcome to Our Blog</h1>
+    <p>Stay updated with the latest health & wellness tips</p>
+  </section>
+
+  <!-- BLOG LISTINGS -->
+  <section class="blog-list">
+
+    <!-- BLOG POST 1 -->
+    <div class="blog-post">
+      <h2>5 Tips for a Healthy Lifestyle</h2>
+      <p class="blog-date">Published on January 15, 2025</p>
+      <img src="/IMAGE/blog1.avif" alt="Healthy Lifestyle">
+      <p>Maintaining a healthy lifestyle is easier than you think. Here are five practical tips to get started...</p>
+      <button class="read-more-btn" onclick="toggleContent('blog1')">Read More</button>
+      <div id="blog1" class="blog-content">
+        <p><strong>1. Eat Balanced Meals:</strong> Focus on a variety of fruits, vegetables, whole grains, and lean proteins.</p>
+        <p><strong>2. Stay Hydrated:</strong> Drink at least 8 glasses of water daily.</p>
+        <p><strong>3. Exercise Regularly:</strong> Engage in physical activities to boost overall well-being.</p>
+        <p><strong>4. Get Adequate Sleep:</strong> Ensure you get 7-9 hours of quality sleep each night.</p>
+        <p><strong>5. Manage Stress:</strong> Practice mindfulness, meditation, or relaxation techniques.</p>
+      </div>
+    </div>
+
+    <!-- BLOG POST 2 -->
+    <div class="blog-post">
+      <h2>How to Choose the Right Supplement</h2>
+      <p class="blog-date">Published on February 10, 2025</p>
+      <img src="IMAGE/blog2.avif" alt="Supplements">
+      <p>With countless supplements available, selecting the right one can be challenging. Here are some essential tips...</p>
+      <button class="read-more-btn" onclick="toggleContent('blog2')">Read More</button>
+      <div id="blog2" class="blog-content">
+        <p><strong>1. Research the Ingredients:</strong> Choose supplements with scientifically proven ingredients.</p>
+        <p><strong>2. Evaluate the Dosage:</strong> Ensure the supplement provides an effective dosage.</p>
+        <p><strong>3. Consult a Professional:</strong> Speak with a healthcare provider for personalized advice.</p>
+        <p><strong>4. Read Reviews:</strong> Check customer feedback to ensure safety and effectiveness.</p>
+      </div>
+    </div>
+
+    <!-- BLOG POST 3 -->
+    <div class="blog-post">
+      <h2>Understanding Blood Pressure Monitors</h2>
+      <p class="blog-date">Published on March 05, 2025</p>
+      <img src="IMAGE/blog3.avif" alt="Blood Pressure Monitor">
+      <p>Monitoring your blood pressure at home is essential for maintaining good health. Here’s what you need to know...</p>
+      <button class="read-more-btn" onclick="toggleContent('blog3')">Read More</button>
+      <div id="blog3" class="blog-content">
+        <p><strong>1. Types of Monitors:</strong> Understand the differences between manual and digital monitors.</p>
+        <p><strong>2. Ease of Use:</strong> Look for features such as automatic cuff inflation and clear displays.</p>
+        <p><strong>3. Accuracy:</strong> Ensure the monitor is clinically validated.</p>
+        <p><strong>4. Portability:</strong> Consider a compact model for travel or a full-sized one for home use.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 INVCHAIN PHARMA. All rights reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT TOGGLE -->
+  <script>
+    function toggleContent(blogId) {
+      var content = document.getElementById(blogId);
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

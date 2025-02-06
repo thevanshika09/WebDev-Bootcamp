@@ -1,0 +1,599 @@
+/* RESET / GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8fff8; /* Light greenish background */
+    color: #333;
+  }
+  
+  /* TOP BAR */
+  .top-bar {
+    background-color: #e5ffe5;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* NAVIGATION */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00a846; /* Main green color */
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #cceccc;
+    font-size: larger;
+  }
+  
+  /* SEARCH BOX */
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .search-box button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007c34;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .search-box button:hover {
+    background-color: #005a25;
+  }
+  
+  /* BANNER / HERO SECTION */
+  .banner {
+    text-align: center;
+    background: linear-gradient(135deg, #d6fcd6, #1f361f);
+    padding: 40px 20px;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #006400;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .banner-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00a846;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner-buttons .btn:hover {
+    background-color: #007c34;
+  }
+  
+  .banner-buttons .btn.highlight {
+    background-color: #ff9800;
+  }
+  
+  .banner-offers {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .offer p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #006400;
+  }
+  
+  
+  /* PRODUCTS SECTION */
+  .products {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #006400;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #006400;
+  }
+  
+  .product-card button {
+    background-color: #00a846;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .product-card button:hover {
+    background-color: #007c34;
+  }
+  
+  /* HOT OFFER SECTION */
+  .hot-offer {
+    text-align: center;
+    background-color: #e5ffe5;
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+  
+  .hot-offer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #006400;
+  }
+  
+  .hot-offer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .hot-offer button {
+    background-color: #00a846;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .hot-offer button:hover {
+    background-color: #007c34;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #00a846;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* CONTACT PAGE STYLES -------------------------------------- */
+.contact-hero {
+    background: linear-gradient(135deg, #d6fcd6, #9ef19e);
+    padding: 60px 20px;
+    text-align: center;
+    color: #006400;
+  }
+  .contact-hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .contact-hero-content p {
+    font-size: 18px;
+  }
+  
+  .contact-section {
+    padding: 40px 20px;
+  }
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contact-info {
+    flex: 1 1 300px;
+  }
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #006400;
+  }
+  .contact-info p {
+    margin-bottom: 15px;
+  }
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    flex: 1 1 400px;
+  }
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form label {
+    margin: 8px 0 4px;
+    font-weight: bold;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .contact-form button {
+    margin-top: 15px;
+    background-color: #00a846;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background-color: #007c34;
+    font-size: larger;
+  }
+  
+  .map-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .map-section h2 {
+    font-size: 24px;
+    color: #006400;
+    margin-bottom: 20px;
+  }
+  .map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #00a846;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  
+  /* FEATURED FOOTER */
+  .featured-footer {
+    background-color: #00a846;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col {
+    flex: 1 1 200px;
+  }
+  
+  .footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .footer-col p {
+    line-height: 1.6;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col a {
+    color: #ccffcc;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover {
+    color: #fff;
+    font-size: larger;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #007c34;
+    padding-top: 20px;
+  }
+  /* ABOUT PAGE STYLES -------------------------------------- */
+  .about-hero {
+    background: linear-gradient(135deg, #d6fcd6, #9ef19e);
+    padding: 60px 20px;
+    text-align: center;
+    color: #006400;
+  }
+  .about-hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .about-hero-content p {
+    font-size: 18px;
+  }
+  
+  .about-section {
+    padding: 40px 20px;
+  }
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  .about-image,
+  .about-text {
+    flex: 1 1 400px;
+  }
+  .about-image img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  .about-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .values-section {
+    padding: 40px 20px;
+    background-color: #f4fff4;
+    text-align: center;
+  }
+  .values-section h2 {
+    font-size: 28px;
+    color: #006400;
+    margin-bottom: 30px;
+  }
+  .values-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .value-item {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .value-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .value-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  
+  /* BLOG HERO SECTION */
+.blog-hero {
+   
+    background: linear-gradient(135deg, #d6fcd6, #9ef19e);
+    padding: 40px 20px;
+    text-align: center;
+    color: #006400;
+  }
+  
+  /* BLOG LIST SECTION */
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* BLOG POST STYLE */
+  .blog-post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-date {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .read-more-btn {
+    background-color: #00a846;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .blog-content {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 6px;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00a846;
+    color: white;
+    margin-top: 20px;
+  }
+  /* MOBILE STYLES */
+@media (max-width: 788px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .quantity {
+        flex-direction: row;
+    }
+  
+    .footer {
+        text-align: center;
+        padding: 10px;
+    }
+    .about-hero,.banner,.search-box, .blog-hero,.blog-list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .contact-container,
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-image,
+    .about-text,
+    .contact-info,
+    .contact-form {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+    
+  }
